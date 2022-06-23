@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #B3B3B3;
+}
+
+header {
+    background: #ededee;
+    height: 57px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 28px;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 2.3rem ;
+    margin: 2rem;
+    filter: grayscale(100%);
+}
+
+.logo h1 {
+    margin-left: 5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+}
+
+main {
+    display: flex;
+    padding-top: 4em;
+    justify-content: space-between;
+}
+
+.toolset {
+    display: inline-block;
+    position: fixed;
+    top: 14vh;
+    width: 4.5rem;
+    z-index: 99;
+    left: 4rem;
+    text-align: center;
+}
+
+.toolset .tool {
+    background: rgba(242,242,242,0.98);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 0 rgb(0 0 0 / 25%);
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #666;
+    font-weight: 300;
+    /* overflow: hidden; */
+}
+
+.view .bx-show {
+    display: none;
+}
+
+.view.clicked .bx-show{
+    display: block;
+}
+
+.view.clicked .bxs-low-vision{
+    display: none;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.type .label {
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    background-color: #ededee ;
+    padding: 5px;
+    font-family: 'Roboto', monospace;
+    color: #666;
+    border-radius: 5px;
+    display: none;
+}
+
+.type:hover .label {
+    display: block;
+}
+
+.board {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    /* width: 800px;
+    height: 800px; */
+    color: #666;
+    top: 12vh;
+    z-index: 99;
+    left: 15rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.draw {
+    width: 750px;
+    height: 750px;
+    background-color: #fff;
+}
+
+input#color {
+  -webkit-appearance: none;  
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 3.5rem;
+}
+
+input#color::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
+
+.scale {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+
+.scale.clicked {
+    display: flex;
+}
+
+.scale p {
+    background-color: #ccc;
+    color: #fff;
+    font-size: 15px;
+    padding: 0.2rem 0.8rem;
+    margin-right: 1.6rem;
+    border-radius: 0.4rem;
+    font-family: 'Roboto', monospace;
+    cursor: pointer;
+}
+
+.scale .select {
+    display: flex;
+    margin-left: 1.3rem;
+}
+
+.scale p.choosed {
+    background-color: #000;
+}
+
+footer {
+    display: flex;
+    color: #f2f2f2fa;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    bottom: 1rem;
+    left: 6rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.socials {
+    margin-right: 40px;
+}
+
+.socials a {
+    margin-right: 12px;
+    color: #f2f2f2fa;
+    transition: color 150ms ease-in-out ;
+    font-size: 1.3rem;
+}
+
+.socials a:hover {
+    color: #333;
+}
+
+/* Farcry - Drawboard */
