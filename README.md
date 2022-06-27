@@ -1,9 +1,9 @@
 # Neat 🎨
 A browser version of something between a sketchpad and an Etch-A-Sketch.
 
-[Checkout the demo](https://peaceful-panda.netlify.app/)
+[Checkout the demo](https://neat-shiny.netlify.app/)
 
-[![Image of Neat](preview.png)](https://peaceful-panda.netlify.app/)
+[![Image of Neat](preview.png)](https://neat-shiny.netlify.app/)
 
 # Features
 
