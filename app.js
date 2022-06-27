@@ -212,42 +212,14 @@ function activateButton(newMode) {
     }
 }
 
-function updateColor() {
-    // currentColor = 
-}
-
 function setColor(newColor) {
     currentColor = newColor
-    
 }
 
 col.addEventListener('input', (e) => {
     setColor(e.target.value)
 })
 
-let backColor = draw.style.backgroundColor
-
 function back(newColor) {
     draw.style.backgroundColor = newColor
-    // backColor = newColor
 }
-
-
-
-// Set color
-// function setColor(newColor) {
-//     currentColor = newColor
-// }
-
-// color.addEventListener('input', (e) => {
-//     setColor(e.target.value)
-// })
-
-
-
-// Change the color
-// function changeColor(e) {
-//     if (e.type === 'mouseover' && isMouseDown) return
-//     e.target.style.backgroundColor = '#3333' 
-// }
-
